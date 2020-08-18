@@ -1,0 +1,108 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#fedcff",
+				"navigationBarTitleText": "YaoFan"
+			}
+		},{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Mine(*^▽^*)"
+			}
+		}, {
+			"path": "pages/tally/tally",
+			"style": {
+				"navigationBarTitleText": "记账本"
+			}
+		}, {
+			"path": "pages/hit/hit",
+			"style": {
+				"navigationBarTitleText": "暴打姚立渠"
+			}
+		}, {
+			"path": "pages/photoAlbum/photoAlbum",
+			"style": {
+				"navigationBarTitleText": "相册"
+			}
+		}, {
+			"path": "pages/our/our",
+			"style": {
+				"navigationBarTitleText": "Family(^_-)"
+			}
+		}
+
+
+		, {
+			"path": "pages/tally/access/access",
+			"style": {}
+		}, {
+			"path": "pages/tally/total/total",
+			"style": {}
+		}, {
+			"path": "pages/tally/detail/detail",
+			"style": {}
+		}
+	    ,{
+            "path" : "pages/bb/bb",
+            "style" : {
+				"navigationBarTitleText": "小声bb"
+			}
+        }
+        ,{
+            "path" : "pages/bb/bb1/bb1",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/bb/bb2/bb2",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/what/what",
+            "style" : {"navigationBarTitleText": "吃什么？"}
+        }
+        ,{
+            "path" : "pages/lifePublish/lifePublish",
+            "style" : {"navigationBarTitleText": "心情/日记-发布"}
+        }
+        ,{
+            "path" : "pages/lifePublish/xinqin/xinqin",
+            "style" : {"navigationBarTitleText": "心情"}
+        }
+        ,{
+            "path" : "pages/family/family",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/family/penyouquan/penyouquan",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"custom": true,
+		"color": "#999999",
+		"selectedColor": "#333333",
+		"backgroundColor": "#ffe0ff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/tabbar/mine.png",
+				"selectedIconPath": "/static/tabbar/mine1.png",
+				"text": "我"
+			},
+			{
+				"pagePath": "pages/our/our",
+				"iconPath": "/static/tabbar/our.png",
+				"selectedIconPath": "/static/tabbar/our1.png",
+				"text": "我们"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fedcff",
+		"backgroundColor": "#F8F8F8"
+	}
+}

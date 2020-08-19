@@ -73,6 +73,7 @@
 	}
 
 	.tab-view {
+		margin:80upx auto 0;
 		width: 100%;
 		height: 100upx;
 		overflow: hidden;
@@ -81,7 +82,6 @@
 		white-space: nowrap;
 		position: fixed;
 		z-index: 999;
-
 		.active {
 			color: #ffaaff;
 			border-bottom: 2px solid #ffaaff;

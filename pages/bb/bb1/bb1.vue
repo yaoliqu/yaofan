@@ -3,15 +3,15 @@
 		<view class="tmp-box">
 			<view class='filterBox'>
 				<view class='filter-input'>
-					<image class='filterImg' src='../../../static/our/chunqian.png'></image>
-					<input class="text" type='text' v-model="inputVal" confirm-type="搜索" @confirm='handleFllter' placeholder='记仇小本本'></input>
+					<image class='filterImg' src='../../../static/image/search.png'></image>
+					<input class="text" type='text' v-model="inputVal" confirm-type="搜索" placeholder='记仇小本本'></input>
 				</view>
 			</view>
 		</view>
-		<button type="primary" class="btn">记下，你死定了</button>
+		<button type="primary" class="btn" @tap="pushContent">记下，你死定了</button>
 		<!-- 单行内容显示 -->
-		<uni-list>
-			<uni-list-item title="列表文字ccccccccccc啛啛喳喳错错错" clickable   @click="onClick"></uni-list-item>
+		<uni-list v-for="(item,index) in list" :key=(item,index)>
+			<uni-list-item :title=item clickable   @tap="onClick(index)"></uni-list-item>
 		</uni-list>
 	
 	</view>
@@ -22,32 +22,32 @@
 		data() {
 			return {
 				inputVal: "",
+				list:[]
 			}
 		},
 
 		methods: {
-			onClick(){
+			onClick(index){
 				uni.showModal({
 				    title: '提示',
-				    content: '这是一个模态弹窗',
-				    success: function (res) {
+				    content: '要删除吗？',
+				    success:res=> {
 				        if (res.confirm) {
-				            console.log('用户点击确定');
+				            this.list.splice(index,1)
 				        } else if (res.cancel) {
 				            console.log('用户点击取消');
 				        }
 				    }
 				});
 			},
-			handleFllter(e) {
-				// console.log(e.detail.value)
-				this.$emit("confirm", e.detail.value)
-			},
-			clears() {
-				console.log(this.inputVal)
-				this.inputVal = ""
-				console.log('清除了内容')
-			}
+			
+			
+			
+		pushContent(){
+			this.list.push(this.inputVal)
+			this.inputVal = ""
+		},
+		
 		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
     <view class="view">
-	5
+	还没想好做什么
     </view>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		ff
+		好难啊
 	</view>
 </template>
 

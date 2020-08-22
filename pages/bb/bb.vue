@@ -73,7 +73,6 @@
 	}
 
 	.tab-view {
-		margin:80upx auto 0;
 		width: 100%;
 		height: 100upx;
 		overflow: hidden;

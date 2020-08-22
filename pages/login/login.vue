@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="login-wrapper">
-			<view class="header">Login</view>
+			<view class="header">茅房的App</view>
 			<view class="form-wrapper">
 				<input type="text" name="username" placeholder="username" class="input-item" v-model="username" />
 				<input type="password" name="password" placeholder="password" class="input-item" v-model="password" />
@@ -91,7 +91,7 @@
 	}
 
 	.login-wrapper .header {
-		font-size: 60upx;
+		font-size: 50upx;
 		font-weight: bold;
 		text-align: center;
 		line-height: 350upx;

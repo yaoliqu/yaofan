@@ -18,7 +18,7 @@
 					<image src="../../static/our/what.png" mode="aspectFill"></image>
 				</view>
 			</navigator>
-			<view class="wrapper-item item-bg-color3">
+			<view class="wrapper-item item-bg-color3" @click="dkf">
 				<view class="text">
 					Together
 				</view>
@@ -26,15 +26,15 @@
 					<image src="../../static/our/together.png" mode="aspectFill"></image>
 				</view>
 			</view>
-			<view class="wrapper-item item-bg-color4">
+			<navigator url="../plan/plan" class="wrapper-item item-bg-color4">
 				<view class="text">
 					Plan
 				</view>
 				<view class="icon">
 					<image src="../../static/our/plan.png" mode="aspectFill"></image>
 				</view>
-			</view>
-			<view class="wrapper-item item-bg-color6">
+			</navigator>
+			<view class="wrapper-item item-bg-color6"  @click="dkf">
 				<view class="text">
 					纪念日
 				</view>
@@ -42,7 +42,7 @@
 					<image src="../../static/our/jinianri.png" mode="aspectFill"></image>
 				</view>
 			</view>
-			<view class="wrapper-item item-bg-color2">
+			<view class="wrapper-item item-bg-color2" @click="dkf">
 				<view class="text">
 					存钱罐
 				</view>
@@ -82,7 +82,13 @@
 
 		},
 		methods: {
-
+			dkf() {
+				uni.showToast({
+					title: '留个悬念（待开发）',
+					duration: 2000,
+					icon: 'none'
+				})
+			}
 		}
 	}
 </script>

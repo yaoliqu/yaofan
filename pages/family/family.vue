@@ -12,13 +12,15 @@
 			</view>
 		</view>
 		<view class="access">
-			<penyouquan />
+			<penyouquan v-show="tabIndex==0"/>
+			<diary v-show="tabIndex==1"/>
 		</view>
 	</view>
 </template>
 
 <script>
 	import penyouquan from '@/pages/family/penyouquan/penyouquan'
+	import diary from '@/pages/family/diary/diary'
 	export default {
 		data() {
 			return {
@@ -37,7 +39,8 @@
 			}
 		},
 		components:{
-			penyouquan
+			penyouquan,
+			diary
 		},
 		methods: {
 			//点击顶部导航
@@ -71,8 +74,7 @@
 		transform: scaleY(0.5);
 	}
 
-	.tab-view {
-		margin:80upx auto 0;
+	.tab-view {	
 		width: 100%;
 		height: 100upx;
 		overflow: hidden;

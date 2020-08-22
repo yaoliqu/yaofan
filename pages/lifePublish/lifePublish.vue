@@ -6,7 +6,7 @@
 			<navigator url="./xinqin/xinqin" class="item">
 				发个心情
 			</navigator>
-			<view class="item">
+			<view class="item" @click="dkf">
 				写个小作文
 			</view>
 		</view>
@@ -21,7 +21,13 @@
 			}
 		},
 		methods: {
-
+		dkf(){
+			uni.showToast({
+				title:'加班开发中...',
+				duration:2000,
+				icon:'none'
+			})
+		}
 		}
 	}
 </script>
@@ -31,7 +37,7 @@
 		width: 100%;
 		height: 100vh;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		align-items: center;
 		flex-direction: column;
 	}

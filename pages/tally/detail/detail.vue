@@ -1,6 +1,6 @@
 <template>
 	<view>
-		cc
+		老师没教
 	</view>
 </template>
 

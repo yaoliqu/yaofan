@@ -7,35 +7,31 @@
 				"navigationBarBackgroundColor": "#fedcff",
 				"navigationBarTitleText": "YaoFan"
 			}
-		},{
+		}, {
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "Mine(*^▽^*)"
 			}
+		},
+		{
+			"path": "pages/bb/bb",
+			"style": {
+				"navigationBarTitleText": "小声bb"
+			}
 		}, {
+			"path": "pages/bb/bb1/bb1",
+			"style": {}
+		}, {
+			"path": "pages/bb/bb2/bb2",
+			"style": {}
+		},
+		{
 			"path": "pages/tally/tally",
 			"style": {
 				"navigationBarTitleText": "记账本"
 			}
-		}, {
-			"path": "pages/hit/hit",
-			"style": {
-				"navigationBarTitleText": "暴打姚立渠"
-			}
-		}, {
-			"path": "pages/photoAlbum/photoAlbum",
-			"style": {
-				"navigationBarTitleText": "相册"
-			}
-		}, {
-			"path": "pages/our/our",
-			"style": {
-				"navigationBarTitleText": "Family(^_-)"
-			}
-		}
-
-
-		, {
+		},
+		{
 			"path": "pages/tally/access/access",
 			"style": {}
 		}, {
@@ -44,40 +40,65 @@
 		}, {
 			"path": "pages/tally/detail/detail",
 			"style": {}
+		},
+		{
+			"path": "pages/hit/hit",
+			"style": {
+				"navigationBarTitleText": "暴打姚立渠"
+			}
+		},
+		{
+			"path": "pages/lifePublish/lifePublish",
+			"style": {
+				"navigationBarTitleText": "心情/日记-发布"
+			}
+		}, {
+			"path": "pages/lifePublish/xinqin/xinqin",
+			"style": {
+				"navigationBarTitleText": "心情"
+			}
+		},
+		{
+			"path": "pages/our/our",
+			"style": {
+				"navigationBarTitleText": "Family(^_-)"
+			}
+		},
+		{
+			"path": "pages/photoAlbum/photoAlbum",
+			"style": {
+				"navigationBarTitleText": "相册"
+			}
+		},
+
+
+		{
+			"path": "pages/what/what",
+			"style": {
+				"navigationBarTitleText": "吃什么？"
+			}
+		}, {
+			"path": "pages/family/family",
+			"style": {
+				"navigationBarTitleText": "家园"
+			}
+		}, {
+			"path": "pages/family/penyouquan/penyouquan",
+			"style": {}
+		}, {
+			"path": "pages/family/diary/diary",
+			"style": {}
+		},{
+			"path": "pages/family/diary/diaryDetail",
+			"style": {
+				"navigationBarTitleText": "日记详情"
+			}
 		}
 	    ,{
-            "path" : "pages/bb/bb",
+            "path" : "pages/plan/plan",
             "style" : {
-				"navigationBarTitleText": "小声bb"
+				"navigationBarTitleText": "计划"
 			}
-        }
-        ,{
-            "path" : "pages/bb/bb1/bb1",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/bb/bb2/bb2",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/what/what",
-            "style" : {"navigationBarTitleText": "吃什么？"}
-        }
-        ,{
-            "path" : "pages/lifePublish/lifePublish",
-            "style" : {"navigationBarTitleText": "心情/日记-发布"}
-        }
-        ,{
-            "path" : "pages/lifePublish/xinqin/xinqin",
-            "style" : {"navigationBarTitleText": "心情"}
-        }
-        ,{
-            "path" : "pages/family/family",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/family/penyouquan/penyouquan",
-            "style" : {}
         }
     ],
 	"tabBar": {

@@ -7,7 +7,7 @@
 		<view class="flex_col flex_col_3 flex_wrap">
 			<view class="item" v-for="(item,index) in list" :key="index" @tap="whack(index)">
 				<image src="/static/hit/hole.png" mode="aspectFit" class="hole"></image>
-				<image src="/static/hit/mouse.png" mode="aspectFit" class="mouse" v-show="item == 1"></image>
+				<image src="/static/hit/ylq.png" mode="aspectFit" class="mouse" v-show="item == 1"></image>
 				<image src="/static/hit/boom.png" mode="aspectFit" class="boom" v-show="item == 2"></image>
 			</view>
 		</view>

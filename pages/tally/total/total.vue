@@ -1,6 +1,6 @@
 <template>
 	<view>
-		bb
+		不会呀
 	</view>
 </template>
 
